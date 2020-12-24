@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/responsive.css">
     <title>Desafio do Churrasco</title>
 </head>
+
 <body>
-    <h1>Ola Mundo!</h1>
-    <a href="list.html">Lista do churrasco</a>
+    <div class="page">
+        <header>
+            <div>
+                <h1>Churrasco da Empresa</h1>
+                <p>Sistema para gerenciar o churrasco da empresa!</p>
+            </div>
+            <a href="list.html">Lista dos participantes</a>
+        </header>
+        
+        <div class="section-form">
+            <section class="section">
+                <h4>Se você deseja participar do churrasco da empresa, preencha os campos abaixo!</h4>
+                <br>
+                <form action="../validation.php" method="POST">
+                    <div class="field">
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" placeholder="Digite seu nome" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="name">Voce pretende beber algo? </label>
+                        <div class="field-radio">
+                            <input type="radio" name="beverage" id="" value='yes'>
+                            <label for="">Sim</label>
+                            <input type="radio" name="beverage" id="" value='no'>
+                            <label for="">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="name">Voce deseja levar um convidado:</label>
+                        <div class="field-radio">
+                            <input type="radio" name="guest" value='yes'>
+                            <label for="">Sim</label>
+                            <input type="radio" name="guest" value='no'>
+                            <label for="">Não</label>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="guest">Nome do convidado</label>
+                        <input type="text" placeholder="Nome do convidado" name="name-guest">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="name">Seu convidado pretende beber algo?:</label>
+                        <div class="field-radio">
+                            <input type="radio" name="beverage-guest" value='yes'>
+                            <label for="">Sim</label>
+                            <input type="radio" name="beverage-guest" value='no'>
+                            <label for="">Não</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="button" name="action" value="Cadastrar" >
+                </form>
+            </section>
+        </div>
+
+    </div>
 </body>
 </html>
