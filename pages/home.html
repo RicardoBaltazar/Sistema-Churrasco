@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/index.css">
@@ -18,10 +19,12 @@
                 <h1>Churrasco da Empresa</h1>
                 <p>Sistema para gerenciar o churrasco da empresa!</p>
             </div>
-            <a href="list.html">Lista dos participantes</a>
+            <a href="#" class="link-menu" id="form">Home</a>
+            <a href="#" class="link-menu" id="list">Lista dos participantes</a>
         </header>
         
-        <div class="section-form">
+        <div class="section-form" id="section-form">
+            <!--
             <section class="section">
                 <h4>Se você deseja participar do churrasco da empresa, preencha os campos abaixo!</h4>
                 <br>
@@ -67,8 +70,26 @@
                     <input type="submit" class="button" name="action" value="Cadastrar" >
                 </form>
             </section>
+            -->
         </div>
 
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.link-menu').click(function(){
+                let load_url = this.id
+                load_url = load_url+'.html'
+
+                $.ajax({
+                    url: load_url,
+                    success: function(data){
+                        $('.section-form').html(data)
+                    }
+                })
+                
+            })
+        })
+    </script>
 </body>
 </html>
