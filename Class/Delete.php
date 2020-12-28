@@ -1,5 +1,4 @@
 <?php
-
 require_once 'Connect.php';
 
 Class Delete{
@@ -12,7 +11,6 @@ Class Delete{
             if($delete){
                 header('location:pages/home.html');
             }
-            
         } catch (PDOException $error) {
             echo 'Erro com banco de dados '.$error ->getMessage();
             exit();
@@ -37,7 +35,6 @@ Class Delete{
             if($update){
                 header('location:pages/home.html');
             }
-            
         } catch (PDOException $error) {
             echo 'Erro com banco de dados '.$error ->getMessage();
             exit();
@@ -46,6 +43,4 @@ Class Delete{
             exit();
         }
     }
-
- 
 }

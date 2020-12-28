@@ -1,5 +1,4 @@
 <?php
-
 require_once 'Insert.php';
 
 Class User{

@@ -1,5 +1,4 @@
 <?php
-
 require_once 'Class/User.php';
 
 if(isset($_POST['action'])){
@@ -15,7 +14,6 @@ if(isset($_POST['action'])){
 
         $name = strtolower($name);
         $nameGuest = strtolower($nameGuest);
-
 
         if($beverage == '1'){
             $beverage = 1;
@@ -42,10 +40,7 @@ if(isset($_POST['action'])){
             $beverageGuest = 0;
         }
 
-
         $user = new User;
         $user->Add($name, $beverage, $guest, $nameGuest, $beverageGuest, $totalvalue, $beverageValue, $foodValue);
-
-        
     }
 }

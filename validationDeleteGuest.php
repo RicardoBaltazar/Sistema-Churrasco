@@ -1,5 +1,4 @@
 <?php
-
 require_once 'Class/Delete.php';
 
 $id = $_GET['id'];

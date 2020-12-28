@@ -1,5 +1,4 @@
 <?php
-
 require_once 'Connect.php';
 
 Class Insert{
@@ -16,7 +15,6 @@ Class Insert{
             $insert->bindParam(":beverage_value", $beverageValue);
             $insert->bindParam(":food_value", $foodValue);
             $executeInsert = $insert->execute();   
-            
             if($executeInsert){
                 header('location:pages/home.html');
             }
