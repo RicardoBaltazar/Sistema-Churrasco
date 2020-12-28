@@ -67,6 +67,11 @@ a:hover{
     border-radius: 8px;
 }
 
+.section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 .field{
     display: flex;
     flex-direction: column;
@@ -104,3 +109,7 @@ input:focus{
     transition: 0.3s;
 }
 
+.btn{
+    margin-left: 5px;
+    padding: 5px;
+}

@@ -1,3 +1,7 @@
+<?php
+require_once '../Class/Select.php';
+$select = new Select;
+?>
 <!--
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,29 +29,42 @@
         
         <div class="section-form">
             -->
+            
             <section class="section">
                 <h4>Lista dos participantes: </h4>
-                <p>colaboradores</p>
+                <?php
+                $select->selectName();
+                ?>
 
                 <br>
                 <h4>Lista dos convidados:</h4>
-                <p>covidados</p>
+                <?php
+                $select->selectGuest();
+                ?>
 
                 <br>
                 <h4>Total arrecadado:</h4>
-                <p>arrecadado</p>
+                <?php
+                $select->totalValue();
+                ?>
 
                 <br>
                 <h4>Total de gastos:</h4>
-                <p>gastos</p>
+                <?php
+                $select->totalValue();
+                ?>
 
                 <br>
                 <h4>Total gasto em comida:</h4>
-                <p>comida</p>
+                <?php
+                $select->foodValue();
+                ?>
 
                 <br>
                 <h4>Total gasto em bebida:</h4>
-                <p>bebida</p>
+                <?php
+                $select->beverageValue();
+                ?>
             </section>
             <!--
         </div>

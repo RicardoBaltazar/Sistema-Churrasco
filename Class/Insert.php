@@ -18,8 +18,7 @@ Class Insert{
             $executeInsert = $insert->execute();   
             
             if($executeInsert){
-                echo 'dados cadastrados!';
-                //header('location:?page=home&parameter=Dados Cadastrados com sucesso! ');
+                header('location:pages/home.html');
             }
         } catch (PDOException $error) {
             echo 'Erro com banco de dados '.$error ->getMessage();
