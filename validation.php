@@ -31,6 +31,7 @@ if(isset($_POST['action'])){
             $foodValue += 10;
         } else {
             $guest = 0;
+            $nameGuest = NULL;
         }
 
         if($beverageGuest == '1'){

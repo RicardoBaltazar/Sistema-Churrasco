@@ -6,13 +6,13 @@ Class Select{
 
     public function selectName(){
         try{
-            $selectName = Database::connect()->prepare("SELECT name FROM list ORDER BY name ASC");
+            $selectName = Database::connect()->prepare("SELECT name, id FROM list ORDER BY name ASC");
             $selectName->execute();
             $executeSelectName = $selectName->fetchAll(PDO::FETCH_ASSOC);
 
             if($executeSelectName){
                 foreach($executeSelectName as $value){
-                    echo "<p>".$value['name']."</p>";
+                    echo "<p>".$value['name']."<a href='../validationDeleteUser.php?id=".$value['id']."' class='btn'>Excluir participante</a></p>";
                     
                 }
             }
@@ -27,13 +27,18 @@ Class Select{
 
     public function selectGuest(){
         try{
-            $selectNameGuest = Database::connect()->prepare("SELECT name_guest FROM list ORDER BY name_guest ASC");
+            $selectNameGuest = Database::connect()->prepare("SELECT name_guest, id, beverage FROM list ORDER BY name_guest ASC");
             $selectNameGuest->execute();
             $executeSelectNameGuest = $selectNameGuest->fetchAll(PDO::FETCH_ASSOC);
 
             if($executeSelectNameGuest){
                 foreach($executeSelectNameGuest as $value){
-                    echo "<p>".$value['name_guest']."</p>";
+                    if(!$value['name_guest'] == ''){
+                        //echo $value['id'];
+                        echo "<p>".$value['name_guest']."<a href='../validationDeleteGuest.php?
+                        id=".$value['id']."&beverage=".$value['beverage'].";
+                        ' class='btn'>Excluir convidado</a></p>";
+                    }
                 }
             }
         } catch (PDOException $error) {

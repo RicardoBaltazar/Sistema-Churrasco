@@ -32,7 +32,7 @@ header {
     display: flex;
 }
 
-a {
+.link-menu {
     color: #284971;
     padding: 20px 10px;
     /*background-color: #f9f9f9;*/
@@ -109,7 +109,10 @@ input:focus{
     transition: 0.3s;
 }
 
-.btn{
-    margin-left: 5px;
+section .btn{
+    margin-left: 10px;
+    margin-bottom: 5px;
     padding: 5px;
+    color: #284971;
+    text-decoration: none;
 }
