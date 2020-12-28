@@ -48,4 +48,12 @@
     .section {
         max-width: 95%;
     }
+
+    .section-list{
+        max-width: 100%;
+    }
+
+    .btn{
+        font-size: 13px;
+    }
 }

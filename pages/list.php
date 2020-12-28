@@ -2,7 +2,7 @@
 require_once '../Class/Select.php';
 $select = new Select;
 ?>
-<section class="section">
+<section class="section-list">
     <h4>Lista dos participantes: </h4>
     <?php
     $select->selectName();
