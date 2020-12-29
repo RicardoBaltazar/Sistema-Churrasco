@@ -3,15 +3,14 @@
 Projeto para gerenciar o churrasco.  
 No sistema os funcionários podem se cadastrar para o churrasco, podem cadastrar um convidado e podem escolher se irão beber algo ou não.  
 Em cada cadastro dos participantes, os valores totais do churrasco atualizam. Quando se exclui a participação de alguem, os valores também atualizam.  
+  
 Os valores:  
 * Para participar do churrasco 10$  
 * Para beber algo 10$  
 * para levar um convidado 10$  
 * Para o convidado beber algo 10$  
   
-
-  
-No frontedn do projeto utilizei   
+No frontend do projeto utilizei   
 - Html  
 - Css 
 - Javascript(jQuery)  
