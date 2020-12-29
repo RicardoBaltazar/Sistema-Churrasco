@@ -24,7 +24,7 @@ No backend
   
 ![cesafio-churrasco3](https://user-images.githubusercontent.com/56805229/103300048-b8faa980-49dc-11eb-89da-b41678e4578f.png)  
   
-![cesafio-churrasco2](https://user-images.githubusercontent.com/56805229/103300069-c2841180-49dc-11eb-9b46-5d64603794b3.png)  
+![cesafio-churrasco2](https://user-images.githubusercontent.com/56805229/103304659-f9abf000-49e7-11eb-85a0-ebec0928b41b.png)  
   
 #### Demostração  
 Obs: O formato GIF acaba tirando um pouco de qualidade da imagens, mas as imagens acima estão com qualidade boa.
