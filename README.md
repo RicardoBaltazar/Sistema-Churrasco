@@ -6,6 +6,7 @@
 ![cesafio-churrasco2](https://user-images.githubusercontent.com/56805229/103300069-c2841180-49dc-11eb-9b46-5d64603794b3.png)  
   
 #### Demostração  
+Obs: O formato GIF acaba tirando um pouco de qualidade da imagens, mas as imagens acima estão com qualidade boa.
 ![desafio-churrasco](https://user-images.githubusercontent.com/56805229/103299854-48ec2380-49dc-11eb-809b-2e3092e40192.gif)  
   
 #### Responsivo  
