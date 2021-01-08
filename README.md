@@ -1,4 +1,4 @@
-# Desafio do Churrasco  
+# Sistema para gerenciar o Churrasco  
   
 Projeto para gerenciar o churrasco.  
 No sistema os funcionários podem se cadastrar para o churrasco, podem cadastrar um convidado e podem escolher se irão beber algo ou não.  
